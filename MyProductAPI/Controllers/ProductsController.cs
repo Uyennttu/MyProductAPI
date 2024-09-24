@@ -86,7 +86,7 @@ namespace MyProductAPI.Controllers
             _context.Products.Add(productModel);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetProductById", new { id = productModel.Id }, product);
+            return CreatedAtAction("GetProductById", new { id = productModel.Id  }, product);
         }
 
         // DELETE: api/Products/5
